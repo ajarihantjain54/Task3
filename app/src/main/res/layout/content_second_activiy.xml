@@ -7,5 +7,31 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.ajarihantjain54gmail.task3.SecondActiviy"
     tools:showIn="@layout/activity_second_activiy">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:onClick="letsfindit"
+            android:text="Press to capture image" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image"/>
+
+        <TextView
+            android:id="@+id/jinda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openit"
+            android:text="\n\n                              " />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

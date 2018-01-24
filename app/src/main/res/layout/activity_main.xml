@@ -5,19 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ajarihantjain54gmail.task3.MainActivity">
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#F00">
+        android:orientation="vertical"
+        android:gravity="center">
+
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/disease"
+            android:text="Disease Recognition"
+            android:gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:onClick="sendMessage"
-            android:text="Second View" />
-    </RelativeLayout>
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/soil"
+            android:text="Soil Fertility"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/diseas"
+            android:text="General Information"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
